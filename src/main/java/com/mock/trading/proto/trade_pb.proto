@@ -1,0 +1,49 @@
+package com.elvenland.trading.pb;
+
+
+message bar_pb{
+	optional string symbol=1;
+	optional uint64 ts = 2;
+	optional double open =3;
+	optional double high = 4;
+	optional double low = 5;
+	optional double close = 6;
+	optional uint32 volume = 7; 
+	optional int32 sec = 8;
+}
+
+message tick_pb{
+        optional string symbol=1;
+        optional uint32 index=2;
+        optional uint64 ts=3;
+        optional string type=4; 
+        optional float bid=5;
+        optional float ask=6;
+        optional uint32 bidsize=7;
+        optional uint32 asksize=8;
+        optional string exchange=9;
+        optional string change=10;      
+}
+
+message daily_pb{
+	optional string symbol=1;
+	optional uint32 date = 2;
+	optional double open =3;
+	optional double high = 4;
+	optional double low = 5;
+	optional double close = 6;
+	optional uint32 volume = 7;
+}
+
+enum macd_cross_pbe{
+	cross_above = 1;
+	cross_below = 2;
+	cross_both = 3;
+	none = 4;
+}
+
+message macd_pb{
+	optional double macd=1;
+	optional double signal=2;
+	optional double macdhist=3;	
+	optional macd_cross_pbe cross = 4 [default=none];	 	

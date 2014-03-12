@@ -1,0 +1,20 @@
+feature
+
+	data:
+		tick market data for one day
+	
+	cassandra:
+		google protobuffer
+		serializer
+		
+		customize entitystore
+		
+		AbstractColumnMapper
+		CodeColumnMapper
+		EntityMapper
+		ExecutionColumnMapper
+		MyDefaultEntityManager
+		
+		
+			
+	
