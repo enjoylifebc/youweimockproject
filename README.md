@@ -1,4 +1,3 @@
-
 youweimockproject
 =================
 
@@ -14,6 +13,9 @@ TimeWithSequenceSerializer - Unique tick with Time and Sequence.  This call for 
 
 GrizzlyMain/JersyMain
 two way to start web service: using gzilly or jersey to serve the time serie data
+
+Technical Indicator
+I added few technical indicators such as ADX, MACD, STOCH, RSI.  Tick data, or bars can be feed into these indicator.
 
 Entitystore:
 Customization to astyanax data mapper entity, in particular, I was trying to embed a customized list inside Entity Manager framework.
